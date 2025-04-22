@@ -34,6 +34,6 @@ jobs:
         run: |
           git config --global user.email "bot@example.com"
           git config --global user.name "GitHub Actions"
-          git add _posts/
+          git add _posts/ used_meiba_gemini.json  # ✅ ← これを追加！
           git commit -m "Add new meiba article"
           git push
