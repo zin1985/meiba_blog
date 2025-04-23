@@ -1,10 +1,3 @@
-title: "名馬ブログ"
-description: "実在した名馬たちの魅力と伝説をAIが解説"
-baseurl: "/meiba_blog"
-url: "https://zin1985.github.io"
+title: ビジネス図解ブログ
 markdown: kramdown
-theme: minima
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+permalink: /:year/:month/:day/:title.html
