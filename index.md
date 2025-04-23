@@ -1,14 +1,17 @@
 ---
-layout: default
-title: ビジネス図解ブログ
+layout: home
+title: 実在した名馬の図鑑ブログ
 ---
 
-# 📘 最新ビジネス記事一覧
+<h1>🏇 名馬図鑑ブログ</h1>
+<p>毎日1頭、実在した名馬の魅力をたっぷり紹介します。</p>
 
-<ul>
+<div class="posts">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%Y年%m月%d日" }} - {{ post.title }}</a>
-    </li>
+    <article style="margin-bottom: 2em; padding: 1em; border: 1px solid #ccc; border-radius: 10px;">
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <p><small>{{ post.date | date: "%Y年%m月%d日" }}</small></p>
+      <p>{{ post.description }}</p>
+    </article>
   {% endfor %}
-</ul>
+</div>
