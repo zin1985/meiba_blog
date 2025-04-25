@@ -4,7 +4,7 @@ baseurl: "/meiba_blog"
 url: "https://zin1985.github.io"
 markdown: kramdown
 theme: minima
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
